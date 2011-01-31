@@ -1,4 +1,9 @@
 In this repo I will include my configuration files for:
-Aquamacs
-VIM
+vim
+== omnicppcomplete
+== supertab
+== tags for standard c++ library and qt4
+== gccsense completion
+
+
 
