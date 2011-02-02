@@ -5,5 +5,13 @@ vim
 == tags for standard c++ library and qt4
 == gccsense completion
 
+-2.02.2011 Added vim-addon-manager (only for console vim)
+
+usage:
+copy vimwtyczki to your $HOME directory
+copy vim-config to ~.vim/
+check in .vimrc if you have uncommented sourcing managersettings.vim for vim-addon specific settings.
+If something doesn't work comment the file to not load vim-addon plugin.
+ 
 
 
