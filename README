@@ -7,6 +7,7 @@ vim
 
 -2.02.2011 Added vim-addon-manager (only for console vim)
 
+-5.02.2011 Added support for snipMate ( now working correctly with supertab)
 usage:
 copy vimwtyczki to your $HOME directory
 copy vim-config to ~.vim/
