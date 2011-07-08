@@ -433,3 +433,12 @@ fun s:UpdateVars()
 	let g:snipPos[s:curPos][2] = newWordLen
 endf
 " vim:noet:sw=4:ts=4:ft=vim
+
+fun! GetSnipsInCurrentScope() 
+    let snips = {} 
+    for scope in [bufnr('%')] + split(&ft, '\.') + ['_'] 
+      call extend(snips, get(s:snippets, scope, {}), 'keep') 
+      call extend(snips, get(s:multi_snips, scope, {}), 'keep') 
+    endfor 
+    return snips 
+  endf 

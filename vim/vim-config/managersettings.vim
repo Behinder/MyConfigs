@@ -1,13 +1,16 @@
-fun ActivateAddons()
+fun SetupVAM()
           set runtimepath+=~/vimwtyczki/vim-addon-manager
-          try
-            call scriptmanager#Activate(['pluginA', 'pluginB'])
-          catch /.*/
-            echoe v:exception
-          endtry
- endf
- call ActivateAddons()
+          " commenting try .. endtry because trace is lost if you use it.
+          " There should be no exception anyway
+          " try
+           call vam#ActivateAddons(['pluginA', 'pluginB'])
+          " catch /.*/
+          "  echoe v:exception
+          " endtry
+        endf
+        call SetupVAM()
         " experimental: run after gui has been started [3]
-        " option1:  au VimEnter * call Activate()
-        " option2:  au GUIEnter * call Activate()
+        " option1:  au VimEnter * call SetupVAM()
+        " option2:  au GUIEnter * call SetupVAM()
         " See BUGS sections below [*]
+
