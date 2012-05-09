@@ -3,7 +3,7 @@ fun SetupVAM()
           " commenting try .. endtry because trace is lost if you use it.
           " There should be no exception anyway
           " try
-           call vam#ActivateAddons(['supertab'])
+           call vam#ActivateAddons(['EasyMotion'])
           " catch /.*/
           "  echoe v:exception
           " endtry
