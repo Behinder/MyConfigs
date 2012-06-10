@@ -1,4 +1,4 @@
-fun SetupVAM()
+fun! SetupVAM()
           set runtimepath+=~/vimwtyczki/vim-addon-manager
           " commenting try .. endtry because trace is lost if you use it.
           " There should be no exception anyway
