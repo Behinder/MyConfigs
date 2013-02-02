@@ -78,7 +78,7 @@ nnoremap ; :
 
 " tutaj bedzie source do pliku zawierajaceg ustawienia vim-addon
 "w razie co zakomentowac
-source ~/.vim/managersettings.vim
+source ~/MyConfigs/.vim/managersettings.vim
 
 "ustawienie do spatchowanego snippets przez auto pop-up
 let g:acp_behaviorSnipmateLength = 1

@@ -1,9 +1,9 @@
 fun! SetupVAM()
-          set runtimepath+=~/vimwtyczki/vim-addon-manager
+          set runtimepath+=~/MyConfigs/vimwtyczki/vim-addon-manager
           " commenting try .. endtry because trace is lost if you use it.
           " There should be no exception anyway
           " try
-           call vam#ActivateAddons(['EasyMotion'])
+           call vam#ActivateAddons(['EasyMotion','vim-addon-mw-utils','tlib','snipmate-snippets','github-garbas-vim-snipmate'])
           " catch /.*/
           "  echoe v:exception
           " endtry
