@@ -64,11 +64,12 @@ let g:gccsenseUseOmniFunc = 1
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
-"CTAGS settings?
-:set tags=~/.vim/tags/tags,./tags,tags
-:set tags+=~/.vim/tags/cpp
-:set tags+=~/.vim/tags/qt4
-:set tags+=~/.vim/tags/macpp
+"CTAGS settings
+:set tags=~/MyConfigs/.vim/tags/tags,./tags,tags
+:set tags=~/MyConfigs/.vim/tags/cpptags
+
+
+
 "spelling polish
 :set spelllang=pl
 
@@ -84,4 +85,8 @@ source ~/MyConfigs/.vim/managersettings.vim
 let g:acp_behaviorSnipmateLength = 1
 
 "leader
-let mapleader=","
+"let mapleader = "-"
+
+nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+
